@@ -1,4 +1,4 @@
-# COMPOSE — Loja de Roupas
+# COMPOSE — Loja de Roupas 🩷
 
 **Moda acessível, estilo e praticidade.**
 
