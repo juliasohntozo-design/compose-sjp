@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPOSE - Todos os Produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Compose</h1>
+      <p>seu estilo, ao seu alcance.</p>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="vitrine"
+        style="max-width: 1200px; margin: 0 auto; padding: 40px 20px"
+      >
+        <div
+          class="titulo-secao"
+          style="text-align: center; margin-bottom: 40px"
+        >
+          <h2>Nossa Coleção Complete</h2>
+          <p>Confira todas as peças disponíveis na nossa loja.</p>
+        </div>
+
+        <!-- Grade de Produtos Lado a Lado -->
+        <div
+          class="produtos-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+          "
+        >
+          <!-- Produto 1 -->
+          <div class="card-produto">
+            <span class="tag">Novo</span>
+            <img src=".//img/blusa.jpg" alt="Blusa Amelie" />
+            <h3>Blusa 'Amelie'</h3>
+            <span class="preco">R$ 79,90</span>
+          </div>
+
+          <!-- Produto 2 -->
+          <div class="card-produto">
+            <span class="tag">Novo</span>
+            <img src=".//img/saia.jpg" alt="Mini Saia Amelie" />
+            <h3>Mini Saia 'Amelie'</h3>
+            <span class="preco">R$ 89,90</span>
+          </div>
+
+          <!-- Produto 3 -->
+          <div class="card-produto">
+            <img src=".//img/bolsa.jpg" alt="Bolsa marrom casual" />
+            <h3>Bolsa marrom casual</h3>
+            <span class="preco">R$ 79,90</span>
+          </div>
+
+          <!-- Produto 4 -->
+          <div class="card-produto">
+            <span class="tag">Oferta</span>
+            <img src=".//img/vestido-floral.jpg" alt="Vestido Floral" />
+            <h3>Vestido Floral</h3>
+            <span class="preco">R$ 119,90</span>
+          </div>
+
+          <!-- Produto 5 -->
+          <div class="card-produto">
+            <img src=".//img/calca-wide.jpg" alt="Calça Wide Leg" />
+            <h3>Calça Wide Leg</h3>
+            <span class="preco">R$ 99,90</span>
+          </div>
+
+          <!-- Produto 6 -->
+          <div class="card-produto">
+            <img src=".//img/bolsinha-estrela.jpg" alt="Bolsinha Estrela" />
+            <h3>Bolsinha Estrela</h3>
+            <span class="preco">R$ 29,90</span>
+          </div>
+
+          <!-- Produto 7 -->
+          <div class="card-produto">
+            <img src=".//img/bota-preta.jpg" alt="Bota Preta" />
+            <h3>Bota Preta</h3>
+            <span class="preco">R$ 149,90</span>
+          </div>
+
+          <!-- Produto 8 -->
+          <div class="card-produto">
+            <img src=".//img/conjunto-rosa.jpg" alt="Conjunto Rosa" />
+            <h3>Conjunto Rosa</h3>
+            <span class="preco">R$ 169,90</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>COMPOSE - seu estilo, ao seu alcance. | Julia Sohn - 2026</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+```html
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>COMPOSE - Loja de Roupas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Biblioteca EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- JavaScript do projeto -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Compose</h1>
+      <p>seu estilo, ao seu alcance.</p>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Seção sobre a loja -->
+      <section class="banner-sobre" id="inicio">
+        <h2>Encontre seu estilo</h2>
+
+        <p>
+          A COMPOSE é uma loja de roupas que busca oferecer opções acessíveis e
+          práticas para seus clientes.
+        </p>
+      </section>
+
+      <!-- Seção dos produtos -->
+      <section class="vitrine" id="produtos">
+        <div class="titulo-secao">
+          <h2>Produtos em destaque</h2>
+          <p>Confira alguns exemplos de peças disponíveis na nossa vitrine.</p>
+        </div>
+
+        <div class="produtos-grid">
+          <div class="card-produto">
+            <span class="tag">Novo</span>
+            <img src="./img/blusa.jpg" alt="Blusa Amelie" />
+            <h3>Blusa 'Amelie'</h3>
+            <span class="preco">R$ 79,90</span>
+          </div>
+
+          <div class="card-produto">
+            <span class="tag">Novo</span>
+            <img src="./img/saia.jpg" alt="Mini Saia Amelie" />
+            <h3>Mini Saia 'Amelie'</h3>
+            <span class="preco">R$ 89,90</span>
+          </div>
+
+          <div class="card-produto">
+            <img src="./img/bolsa.jpg" alt="Bolsa marrom casual" />
+            <h3>Bolsa marrom casual</h3>
+            <span class="preco">R$ 79,90</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de contato -->
+      <section class="contato" id="contato">
+        <div class="titulo-secao">
+          <h2>Entre em contato</h2>
+
+          <p>
+            Se você tiver alguma dúvida, sugestão ou reclamação, preencha o
+            formulário abaixo e entraremos em contato com você.
+          </p>
+        </div>
+
+        <!-- Formulário de contato -->
+        <form id="formContato">
+
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+          />
+
+          <br /><br />
+
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <br /><br />
+
+          <label for="assunto">Assunto:</label>
+          <select
+            id="assunto"
+            name="assunto"
+            required
+          >
+            <option value="">Selecione um assunto</option>
+            <option value="Dúvida">Dúvida</option>
+            <option value="Sugestão">Sugestão</option>
+            <option value="Reclamação">Reclamação</option>
+            <option value="Outros">Outros</option>
+          </select>
+
+          <br /><br />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            required
+          ></textarea>
+
+          <br /><br />
+
+          <button type="submit" id="send-button">
+            Enviar mensagem
+          </button>
+
+        </form>
+
+        <!-- Mensagem de retorno -->
+        <p id="mensagemForm"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>COMPOSE - seu estilo, ao seu alcance. | Julia Sohn - 2026</p>
+    </footer>
+  </body>
+</html>
+```
